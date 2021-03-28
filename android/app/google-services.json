@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "74299530086",
+    "firebase_url": "https://banco-de-dados-mobile-7b54b-default-rtdb.firebaseio.com",
+    "project_id": "banco-de-dados-mobile-7b54b",
+    "storage_bucket": "banco-de-dados-mobile-7b54b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74299530086:android:1e0e7abb4977101a0a06a7",
+        "android_client_info": {
+          "package_name": "br.com.lucas.mobile_sistem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "74299530086-g9cma6c4vejoc01ms2or5oal2rje9n8v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBf8GxsoE0UmIQfLPeKFKR0_RKzYvgg-20"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "74299530086-g9cma6c4vejoc01ms2or5oal2rje9n8v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
