@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_sistem/models/controller.page.dart';
-import 'package:mobile_sistem/views/cadastro.page.dart';
-import 'package:mobile_sistem/views/inicia.page.dart';
-import 'package:mobile_sistem/views/login.page.dart';
+
+import 'pages/login/login.page.dart';
+import 'controladores/controller.dart';
+import 'pages/cadastro/cadastro.page.dart';
+import 'pages/inicio/inicia.page.dart';
 
 void main() {
   runApp(MyApp());
