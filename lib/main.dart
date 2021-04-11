@@ -1,34 +1,31 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_sistem/controladores/provider/user_provider.dart';
+import 'package:provider/provider.dart';
 
-import 'pages/login/login.page.dart';
-import 'controladores/controller.dart';
-import 'pages/cadastro/cadastro.page.dart';
-import 'pages/inicio/inicia.page.dart';
+import 'controladores/router.dart';
+import 'pages/login.page.dart';
 
-void main() {
-  runApp(MyApp());
+void main() => runApp(new WazeHole());
+
+class WazeHole extends StatefulWidget {
+  @override
+  _WazeHoleState createState() => _WazeHoleState();
 }
 
-class MyApp extends StatelessWidget {
+class _WazeHoleState extends State<WazeHole> {
   @override
   Widget build(BuildContext context) {
-    return AnimatedBuilder(
-      animation: ControllerPage.instace,
-      builder: (context, child) {
-        return MaterialApp(
-            theme: ThemeData(
-              primarySwatch: Colors.blueGrey,
-              brightness: ControllerPage.instace.dartTheme
-                  ? Brightness.dark
-                  : Brightness.light,
-            ),
-            initialRoute: '/',
-            routes: {
-              '/': (context) => LoginPage(),
-              '/home': (context) => IniciaPage(),
-              '/cadastro': (context) => CadastroPage(),
-            });
-      },
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(
+          create: (ctx) => Users(),
+        )
+      ],
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: LoginPage(),
+        routes: WazeHoleRoutes().routes,
+      ),
     );
   }
 }
