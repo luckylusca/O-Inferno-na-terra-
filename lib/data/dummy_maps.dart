@@ -1,4 +1,4 @@
-import 'package:mobile_sistem/controladores/map.dart';
+import 'package:mobile_sistem/controladores/mapa.dart';
 
 const DUMMY_MAPAS = {
   '1': const Mapa(
